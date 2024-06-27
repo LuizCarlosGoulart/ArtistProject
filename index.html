@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.webp" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#biography">Biografia</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Bem-vindo ao meu espaço artístico</h1>
+            <p data-text="Explore a arte e conheça mais sobre o meu trabalho.">Explore a arte e conheça mais sobre o meu trabalho.</p>
+        </section>
+        <section id="gallery">
+            <h2>Galeria de Arte</h2>
+            <div class="gallery-container"></div>
+        </section>
+        <section id="biography">
+            <h2>Sobre</h2>
+            <p>Sou César Augusto, um baiano de 26 anos com uma paixão inata por todo tipo de arte. Desde criança, minha criatividade sempre foi minha marca registrada. Envolvido em diversos meios artísticos, dedico meu tempo e talento à arte digital, tatuagem, modelagem 3D e criação de texturas. A arte é minha vida, e a criatividade, meu combustível diário.</p>
+            <div class="author-image">
+                <img src="images/author.webp" alt="Imagem do Autor">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p class="instagram-link"><a href="https://www.instagram.com/__.avgust" target="_blank">@__.avgust</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Artista Web. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -15,24 +15,24 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100; /* Fonte fina por padrão */
+    font-weight: 100;
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding-top: 60px; /* Adicionado para evitar sobreposição do conteúdo pelo header dinâmico */
+    padding-top: 60px;
 }
 
 header {
     padding: 1rem 0;
     width: 100%;
     position: fixed;
-    top: 0; /* Visível inicialmente */
+    top: 0;
     left: 0;
     background: none;
     box-shadow: none;
-    transition: top 0.3s ease-in-out; /* Animação suave para mostrar/esconder o header */
+    transition: top 0.3s ease-in-out;
     z-index: 1000;
-    background-color: rgba(52, 0, 22, 0.9); /* Cor de fundo semitransparente */
+    background-color: rgba(52, 0, 22, 0.9);
 }
 
 .header-container {
@@ -40,17 +40,17 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between; /* Ajusta a distribuição dos elementos no header */
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
-    height: 50px; /* Ajusta o tamanho do logo */
+    height: 50px;
     transition: transform 0.3s;
 }
 
 .logo img:hover {
-    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+    transform: scale(1.1);
 }
 
 nav ul {
@@ -69,12 +69,12 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s, border-bottom 0.3s;
-    border-bottom: 2px solid transparent; /* Inicialmente transparente */
+    border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
     color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color); /* Underline ao passar o mouse */
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .hero {
@@ -128,7 +128,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeIn 2s forwards;
-    font-weight: 700; /* Fonte grossa */
+    font-weight: 700;
 }
 
 .hero p {
@@ -180,21 +180,21 @@ main {
 }
 
 section {
-    padding: 80px 20px; /* Aumenta a borda da sessão */
+    padding: 80px 20px;
     text-align: center;
 }
 
 h1, h2 {
     margin-bottom: 20px;
     color: var(--text-color);
-    font-weight: 700; /* Fonte grossa */
+    font-weight: 700;
 }
 
 p {
     margin-bottom: 20px;
     font-size: 1.1rem;
     color: var(--text-color);
-    font-weight: 100; /* Fonte fina */
+    font-weight: 100;
 }
 
 .instagram-link {
@@ -219,7 +219,7 @@ p {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 300px; /* Ajuste conforme necessário */
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -251,8 +251,8 @@ p {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Garante 3 colunas */
-    gap: 20px; /* Ajusta o espaçamento entre as imagens */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     width: 100%;
     padding: 20px;
 }
@@ -319,7 +319,7 @@ form {
 }
 
 label {
-    font-weight: 700; /* Fonte grossa */
+    font-weight: 700;
     margin-bottom: 5px;
     color: var(--text-color);
 }
@@ -333,7 +333,7 @@ input, textarea {
     transition: border-color 0.3s;
     background-color: var(--quaternary-color);
     color: var(--text-color);
-    font-weight: 100; /* Fonte fina */
+    font-weight: 100;
 }
 
 input:focus, textarea:focus {
@@ -349,7 +349,7 @@ button {
     color: var(--text-color);
     cursor: pointer;
     transition: background-color 0.3s;
-    font-weight: 700; /* Fonte grossa */
+    font-weight: 700;
 }
 
 button:hover {

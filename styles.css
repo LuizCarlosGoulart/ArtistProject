@@ -47,6 +47,7 @@ header {
 .logo img {
     height: 50px;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .logo img:hover {
@@ -319,7 +320,7 @@ form {
 }
 
 label {
-    font-weight: 700; /* Fonte grossa */
+    font-weight: 700;
     margin-bottom: 5px;
     color: var(--text-color);
 }
@@ -409,12 +410,17 @@ footer {
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    .logo img {
+        cursor: pointer;
+    }
+
+    .logo img.active + nav ul {
+        display: flex;
     }
 
     .hero {

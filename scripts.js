@@ -100,4 +100,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('scroll', handleScroll);
     document.addEventListener('mousemove', handleMouseMove);
+
+    // Toggle menu visibility on logo click
+    const logo = document.querySelector('.logo img');
+    const nav = document.querySelector('nav ul');
+
+    logo.addEventListener('click', function() {
+        nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
 });

@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility();
 
-    // Pop-up functionality
     const popup = document.createElement('div');
     popup.classList.add('popup');
     const popupOverlay = document.createElement('div');
@@ -75,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
         popupOverlay.classList.remove('active');
     });
 
-    // Header visibility control
     const header = document.querySelector('header');
     let isInitialSection = true;
 
@@ -100,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', handleScroll);
     document.addEventListener('mousemove', handleMouseMove);
 
-    // Toggle menu visibility on logo click
     const logo = document.querySelector('.logo img');
     const nav = document.querySelector('nav ul');
 

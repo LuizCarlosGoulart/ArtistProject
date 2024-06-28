@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        // Aqui você pode adicionar o código para enviar o formulário
         alert("Mensagem enviada com sucesso!");
     });
 
@@ -49,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); // Para verificar a visibilidade no carregamento inicial
+    checkVisibility();
 
     // Pop-up functionality
     const popup = document.createElement('div');
@@ -91,10 +90,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function handleMouseMove(event) {
-        if (!isInitialSection && event.clientY < 50) { // Se o mouse estiver no topo da tela
+        if (!isInitialSection && event.clientY < 50) {
             header.style.top = '0';
         } else if (!isInitialSection) {
-            header.style.top = '-60px'; // Ajuste conforme a altura do header
+            header.style.top = '-60px';
         }
     }
 
